@@ -1,0 +1,71 @@
+/* Reset default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+
+  height: 100vh; /* Full viewport height */
+}
+
+/* Left side: Image */
+.left {
+  flex: 1; /* Take up half of the space */
+  background: #000;
+  display: flex;
+  flex-direction: left;
+  align-items: center;
+  justify-content: center;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side: Login Form */
+.right {
+  flex: 1; /* Take up half of the space */
+  background: linear-gradient(to bottom, #001f3f, #000); /* Blue to black gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  width: 80%;
+  max-width: 350px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #003d80;
+}
